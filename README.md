@@ -229,7 +229,7 @@ The API applies the same 0.70 decision threshold used during evaluation, so the 
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/Credit-Risk-Prediction.git
+git clone https://github.com/AkouHono/credit-risk-prediction.git
 cd Credit-Risk-Prediction
 
 # Create and activate a virtual environment (optional but recommended)
@@ -323,7 +323,14 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 Questions, feedback, or collaboration ideas are welcome — feel free to open an issue or reach out.
 
-Future Enhancements
+
+## Limitations
+
+This project is intended as a machine learning portfolio and decision-support project rather than a production banking system.
+
+The model should not be used as the sole basis for real-world lending decisions. Production deployment would require additional validation, monitoring, security, fairness assessment, regulatory compliance, and integration with reliable financial data sources.
+
+## Future Enhancements
 
 Batch prediction through CSV file uploads
 Automatic prediction for multiple borrowers
@@ -332,19 +339,3 @@ Real-time credit-risk prediction
 Model monitoring and performance tracking
 Cloud deployment
 Improved model explainability
-
-Limitations
-
-This project is intended as a machine learning portfolio and decision-support project rather than a production banking system.
-
-The model should not be used as the sole basis for real-world lending decisions. Production deployment would require additional validation, monitoring, security, fairness assessment, regulatory compliance, and integration with reliable financial data sources.
-
-Technologies
-Python
-Pandas
-NumPy
-Scikit-learn
-XGBoost
-FastAPI
-Streamlit
-Joblib
