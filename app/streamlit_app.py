@@ -100,7 +100,7 @@ if st.button("Predict Credit Risk", type="primary"):
 
     try:
         response = requests.post(
-            "http://127.0.0.1:8000/predict",
+            "https://credit-risk-prediction-ztcv.onrender.com/",
             json=data
         )
 
