@@ -100,7 +100,7 @@ if st.button("Predict Credit Risk", type="primary"):
 
     try:
         response = requests.post(
-            "https://credit-risk-prediction-ztcv.onrender.com/",
+            "https://credit-risk-prediction-ztcv.onrender.com/predict",
             json=data
         )
 
@@ -131,11 +131,10 @@ if st.button("Predict Credit Risk", type="primary"):
 
         else:
             st.error(
-                f"API error: {response.status_code}"
+                f"API error: {response.status_code} - {response.text}"
             )
 
     except requests.exceptions.ConnectionError:
         st.error(
-            "Could not connect to the FastAPI server. "
-            "Make sure FastAPI is running on port 8000."
+            "Could not connect to the FastAPI server."
         )
